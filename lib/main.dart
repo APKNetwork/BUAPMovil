@@ -45,6 +45,16 @@ class MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text('BUAP Movil')),
+        actions: [
+          PopupMenuButton(
+            itemBuilder: (context) {
+              return const [
+                PopupMenuItem(child: Center(child: Text('Acerca de'))),
+                PopupMenuItem(child: Center(child: Text('Cerrar sesión')))
+              ];
+            }
+          )
+        ],
       ),
       body: Container(
         padding: const EdgeInsets.all(16),
