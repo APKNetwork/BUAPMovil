@@ -46,12 +46,16 @@ class MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text('BUAP Movil')),
+        titleTextStyle: GoogleFonts.montserrat(
+          fontWeight: FontWeight.w900,
+          fontSize: 24
+        ),
         actions: [
           PopupMenuButton(
             itemBuilder: (context) {
               return const [
-                PopupMenuItem(child: Center(child: Text('Acerca de'))),
-                PopupMenuItem(child: Center(child: Text('Cerrar sesión')))
+                PopupMenuItem(child: Center(child: Text('Acerca de', style: TextStyle(fontSize: 14)))),
+                PopupMenuItem(child: Center(child: Text('Cerrar sesión', style: TextStyle(fontSize: 14))))
               ];
             }
           )
@@ -106,8 +110,9 @@ class MyHomePageState extends State<MyHomePage> {
             label: 'Mi kardex',
           ),
         ],
-        selectedItemColor: Theme.of(context).primaryColor,
+        selectedItemColor: Theme.of(context).colorScheme.primary,
         unselectedItemColor: Colors.grey,
+        selectedLabelStyle: const TextStyle(fontSize: 12)
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
