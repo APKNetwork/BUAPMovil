@@ -38,8 +38,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class MyHomePageState extends State<MyHomePage> {
-  int _currentIndex = 2;
+  String appBarText = 'BUAP Móvil';
 
+  int _currentIndex = 2;
   final List<Widget> _views = [
     const DegreeMapView(),
     const NewspaperView(),
@@ -47,6 +48,16 @@ class MyHomePageState extends State<MyHomePage> {
     const WolfGuideView(),
     const KardexView(),
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 5), () {
+      setState(() {
+        appBarText = 'Hola, usuario';
+      });
+    });
+  }
 
   void _onTabSelected(int index) {
     setState(() {
@@ -58,7 +69,7 @@ class MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text('BUAP Movil')),
+        title: Text(appBarText),
         titleTextStyle: GoogleFonts.montserrat(
           fontWeight: FontWeight.w900,
           fontSize: 24
