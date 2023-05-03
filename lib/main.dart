@@ -1,3 +1,8 @@
+import 'package:buapmovil/views/degree_map.dart';
+import 'package:buapmovil/views/kardex.dart';
+import 'package:buapmovil/views/my_schedule.dart';
+import 'package:buapmovil/views/news_paper.dart';
+import 'package:buapmovil/views/wolf_guide.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -35,6 +40,14 @@ class MyHomePage extends StatefulWidget {
 class MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 2;
 
+  final List<Widget> _views = [
+    const DegreeMapView(),
+    const NewspaperView(),
+    const ScheduleView(),
+    const WolfGuideView(),
+    const KardexView(),
+  ];
+
   void _onTabSelected(int index) {
     setState(() {
       _currentIndex = index;
@@ -61,29 +74,9 @@ class MyHomePageState extends State<MyHomePage> {
           )
         ],
       ),
-      body: Container(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Center(
-              child: Text(
-                'Bienvenido a BUAP Movil',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            SizedBox(height: 16),
-            Center(
-              child: Text(
-                'Tu conexión con la universidad',
-                style: TextStyle(fontSize: 16),
-              ),
-            ),
-          ],
-        ),
+      body: IndexedStack(
+        index: _currentIndex,
+        children: _views,
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
