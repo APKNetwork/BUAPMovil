@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,21 +12,13 @@ class MyApp extends StatelessWidget {
       title: 'BUAP Movil',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: const Color(0xFF003B5C),
         scaffoldBackgroundColor: Colors.white,
-        appBarTheme: const AppBarTheme(
-          color: Color(0xFF003B5C),
-          toolbarTextStyle: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-          titleTextStyle: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: const Color(0xFF00B5E2)),
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: const Color(0xFF003B5C),
+          secondary: const Color(0xFF00B5E2),
+        ),
+        textTheme: GoogleFonts.sourceSansProTextTheme(),
+        visualDensity: VisualDensity.comfortable
       ),
       home: const MyHomePage(),
     );
