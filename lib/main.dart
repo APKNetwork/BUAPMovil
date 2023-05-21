@@ -1,3 +1,4 @@
+import 'package:buapmovil/screens/login_screen.dart';
 import 'package:buapmovil/screens/qr_acc_screen.dart';
 import 'package:buapmovil/views/degree_map.dart';
 import 'package:buapmovil/views/home.dart';
@@ -5,10 +6,15 @@ import 'package:buapmovil/views/kardex.dart';
 import 'package:buapmovil/views/my_schedule.dart';
 import 'package:buapmovil/views/news_paper.dart';
 import 'package:buapmovil/views/wolf_guide.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() => runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -26,7 +32,7 @@ class MyApp extends StatelessWidget {
           ),
           textTheme: GoogleFonts.sourceSansProTextTheme(),
           visualDensity: VisualDensity.comfortable),
-      home: const MyHomePage(),
+      home: const LoginScreen(),
     );
   }
 }
