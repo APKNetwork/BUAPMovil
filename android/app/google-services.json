@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "980869560327",
+    "firebase_url": "https://buap-base-default-rtdb.firebaseio.com",
+    "project_id": "buap-base",
+    "storage_bucket": "buap-base.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980869560327:android:7261e20bc0cf75038252a2",
+        "android_client_info": {
+          "package_name": "com.example.buap_movil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980869560327-9v7srs6ra44s8ddnpsk89n0ise3sdk0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiNLpXG2lAb_drToXD6mN2Kg26I6hnGuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980869560327-9v7srs6ra44s8ddnpsk89n0ise3sdk0k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "980869560327-03os94g02i15rld692fcor1kftjqu007.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.buapmovil"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980869560327:android:d2e5659ba19a7f7e8252a2",
+        "android_client_info": {
+          "package_name": "com.example.buapmovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980869560327-9v7srs6ra44s8ddnpsk89n0ise3sdk0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiNLpXG2lAb_drToXD6mN2Kg26I6hnGuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980869560327-9v7srs6ra44s8ddnpsk89n0ise3sdk0k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "980869560327-03os94g02i15rld692fcor1kftjqu007.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.buapmovil"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
