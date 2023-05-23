@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:buapmovil/main.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -10,46 +11,54 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login Page'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            TextField(
-              controller: _emailController,
-              decoration: const InputDecoration(
-                labelText: 'Email',
-              ),
-            ),
-            const SizedBox(height: 16.0),
-            TextField(
-              controller: _passwordController,
-              decoration: const InputDecoration(
-                labelText: 'Password',
-              ),
-              obscureText: true,
-            ),
-            const SizedBox(height: 16.0),
-            ElevatedButton(
-              onPressed: () {
-                _login(context);
-              },
-              child: const Text('Login'),
-            ),
-          ],
+  _inputField(context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        TextField(
+          controller: _emailController,
+          decoration: InputDecoration(
+              hintText: "Correo Electronico",
+              border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(18),
+                  borderSide: BorderSide.none),
+              fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
+              // filled: true,
+              prefixIcon: const Icon(Icons.email)),
         ),
-      ),
+        const SizedBox(height: 10),
+        TextField(
+          controller: _passwordController,
+          decoration: InputDecoration(
+            hintText: "Contraseña",
+            border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(18),
+                borderSide: BorderSide.none),
+            // fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
+            // filled: true,
+            prefixIcon: const Icon(Icons.lock),
+          ),
+          obscureText: true,
+        ),
+        const SizedBox(height: 10),
+        ElevatedButton(
+          onPressed: () {
+            _login(context);
+          },
+          style: ElevatedButton.styleFrom(
+            // shape: const StadiumBorder(),
+            padding: const EdgeInsets.symmetric(vertical: 16),
+          ),
+          child: const Text(
+            "Login",
+            style: TextStyle(fontSize: 20),
+          ),
+        )
+      ],
     );
   }
 
@@ -61,13 +70,17 @@ class _LoginScreenState extends State<LoginScreen> {
         password: _passwordController.text,
       );
 
-      if (userCredential.user != null && mounted) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const MyHomePage(),
-          ),
-        );
+      if (userCredential.user != null) {
+        SharedPreferences prefs = await SharedPreferences.getInstance();
+        prefs.setBool('loggedIn', true);
+        if (mounted) {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const MyHomePage(),
+            ),
+          );
+        }
       }
     } catch (e) {
       showDialog(
@@ -88,5 +101,28 @@ class _LoginScreenState extends State<LoginScreen> {
         },
       );
     }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
+          margin: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Image.network('https://www.llegarasalto.com/prear/wp-content/uploads/letter-b.png', width: 140,),
+              _inputField(context),
+              const Text(
+                "Tu conexión móvil con la universidad",
+                style: TextStyle(fontSize: 14, ),
+              ),
+              // const Text("Tu conexión móvil con la universidad", ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
