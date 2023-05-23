@@ -112,7 +112,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Image.network('https://www.llegarasalto.com/prear/wp-content/uploads/letter-b.png', width: 140,),
+              Image.asset('assets/logoBUAP.png', width: 200,),
               _inputField(context),
               const Text(
                 "Tu conexión móvil con la universidad",
