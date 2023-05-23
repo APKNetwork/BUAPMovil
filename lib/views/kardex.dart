@@ -9,21 +9,16 @@ class Materias {
 }
 
 class KardexView extends StatelessWidget {
-  const KardexView({super.key});
+  final String? userEmail;
+  const KardexView({Key? key, required this.userEmail}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    //int periodos = 2;
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       body: FutureBuilder<DocumentSnapshot>(
         future: FirebaseFirestore.instance
             .collection('estudiantes')
-            .doc('2019ceewfaf')
+            .doc(userEmail)
             .get(),
         builder:
             (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
@@ -63,27 +58,27 @@ class KardexView extends StatelessWidget {
           return ListView(
             children: [
               Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Text(
                   'Alumno: $name $first $second',
-                  style: TextStyle(fontSize: 17.7),
+                  style: const TextStyle(fontSize: 17.7),
                   textAlign: TextAlign.center,
                 ),
               ),
               Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.fromLTRB(50, 20, 40, 20),
+                    padding: const EdgeInsets.fromLTRB(50, 20, 40, 20),
                     child: Text(
                       'Calificación: $cali',
-                      style: TextStyle(fontSize: 16),
+                      style: const TextStyle(fontSize: 16),
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.fromLTRB(50, 20, 40, 20),
+                    padding: const EdgeInsets.fromLTRB(50, 20, 40, 20),
                     child: Text(
                       'Porcentaje: $porcentaje%',
-                      style: TextStyle(fontSize: 16),
+                      style: const TextStyle(fontSize: 16),
                     ),
                   )
                 ],
@@ -92,7 +87,7 @@ class KardexView extends StatelessWidget {
                 ExpansionTile(
                   title: Text(data[i].key),
                   leading: const Icon(Icons.school), //add icon
-                  childrenPadding: EdgeInsets.only(left: 60), //children padding
+                  childrenPadding: const EdgeInsets.only(left: 60), //children padding
                   children: [
                     for (int u = 0; u < data2[i].length; u++)
                       ListTile(
@@ -128,7 +123,7 @@ class KardexView extends StatelessWidget {
                                               width: 400,
                                               height: 400,
                                               child: Card(
-                                                color: Colors.cyan,
+                                                color: Theme.of(context).colorScheme.secondary,
                                                 shape: BeveledRectangleBorder(
                                                   borderRadius:
                                                       BorderRadius.circular(
@@ -149,10 +144,10 @@ class KardexView extends StatelessWidget {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsets.all(20),
+                                                          const EdgeInsets.all(20),
                                                       child: Text(
                                                           'ID: $materiaid',
-                                                          style: TextStyle(
+                                                          style: const TextStyle(
                                                               fontSize: 19)),
                                                     ),
                                                     Padding(
@@ -160,7 +155,7 @@ class KardexView extends StatelessWidget {
                                                           const EdgeInsets.all(
                                                               20),
                                                       child: Text(
-                                                          'Calificacion: $materiaCalificacion',
+                                                          'Calificación: $materiaCalificacion',
                                                           style:
                                                               const TextStyle(
                                                                   fontSize:
@@ -171,7 +166,7 @@ class KardexView extends StatelessWidget {
                                                           const EdgeInsets.all(
                                                               20),
                                                       child: Text(
-                                                          'Creditos: $materiacreditos',
+                                                          'Créditos: $materiacreditos',
                                                           style:
                                                               const TextStyle(
                                                                   fontSize:

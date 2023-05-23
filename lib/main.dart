@@ -63,16 +63,9 @@ class MyHomePage extends StatefulWidget {
 
 class MyHomePageState extends State<MyHomePage> {
   String appBarText = 'BUAP Móvil';
+  String? userEmail;
 
   int _currentIndex = 0;
-  final List<Widget> _views = [
-    const HomeView(),
-    const DegreeMapView(),
-    // const NewspaperView(),
-    const ScheduleView(),
-    const WolfGuideView(),
-    const KardexView(),
-  ];
 
   @override
   void initState() {
@@ -87,9 +80,22 @@ class MyHomePageState extends State<MyHomePage> {
       if (user != null) {
         setState(() {
           appBarText = 'Hola, ${user.email}';
+          userEmail = user.email;
+          userEmail = userEmail?.replaceAll('.', '');
+          userEmail = userEmail?.replaceAll('@', '');
         });
       }
     });
+  }
+
+  List<Widget> _views(String? userEmail) {
+    return [
+      const HomeView(),
+      const DegreeMapView(),
+      ScheduleView(userEmail: userEmail), // Pasar userEmail a ScheduleView
+      const WolfGuideView(),
+      KardexView(userEmail: userEmail), // Pasar userEmail a KardexView
+    ];
   }
 
   void _signOut() async {
@@ -114,13 +120,13 @@ class MyHomePageState extends State<MyHomePage> {
     }
     if (value == 'Acerca de') {
       if (mounted) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => AboutScreen(),
-        ),
-      );
-    }
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => AboutScreen(),
+          ),
+        );
+      }
     }
   }
 
@@ -132,6 +138,7 @@ class MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final String? localUserEmail = userEmail;
     return Scaffold(
       appBar: AppBar(
         title: Text(appBarText),
@@ -160,7 +167,7 @@ class MyHomePageState extends State<MyHomePage> {
       ),
       body: IndexedStack(
         index: _currentIndex,
-        children: _views,
+        children: _views(localUserEmail),
       ),
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,

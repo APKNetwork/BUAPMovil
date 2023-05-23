@@ -3,7 +3,8 @@ import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ScheduleView extends StatelessWidget {
-  const ScheduleView({super.key});
+  final String? userEmail;
+  const ScheduleView({Key? key, required this.userEmail}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class ScheduleView extends StatelessWidget {
       body: FutureBuilder<DocumentSnapshot>(
         future: FirebaseFirestore.instance
             .collection('estudiantes')
-            .doc('2019ceewfaf')
+            .doc(userEmail)
             .get(),
         builder:
             (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
@@ -51,7 +52,7 @@ class ScheduleView extends StatelessWidget {
               color: Theme.of(context).colorScheme.primary,
               child: ContainedTabBarView(
                 tabs: const [
-                  Text('Lu'),
+                  Text('Lun'),
                   Text('Mar'),
                   Text('Mie'),
                   Text('Jue'),
@@ -66,17 +67,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 20, 70, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 20, 70, 0),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data[i].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -84,17 +85,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data[i + 1].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -102,17 +103,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(70, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(70, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data[i + 2].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -129,17 +130,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 20, 70, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 20, 70, 0),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data2[i].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -147,17 +148,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data2[i + 1].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -165,17 +166,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(70, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(70, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data2[i + 2].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -192,17 +193,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 20, 70, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 20, 70, 0),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data3[i].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -210,17 +211,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data3[i + 1].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -228,17 +229,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(70, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(70, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data3[i + 2].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -255,17 +256,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 20, 70, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 20, 70, 0),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data2[i].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -273,17 +274,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data2[i + 1].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -291,17 +292,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(70, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(70, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data2[i + 2].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -318,17 +319,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 20, 70, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 20, 70, 0),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data3[i].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -336,17 +337,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data3[i + 1].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -354,17 +355,17 @@ class ScheduleView extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 200,
-                              margin: EdgeInsets.fromLTRB(70, 10, 0, 0),
+                              margin: const EdgeInsets.fromLTRB(70, 10, 0, 0),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.secondary,
                                 border: Border.all(color: Colors.black54),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
+                                    const BorderRadius.all(Radius.circular(20)),
                               ),
                               child: Center(
                                 child: Text(
                                   data3[i + 2].value.toString(),
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -374,7 +375,6 @@ class ScheduleView extends StatelessWidget {
                     ],
                   ),
                 ],
-                onChange: (index) => print(index),
               ),
             ),
           );
