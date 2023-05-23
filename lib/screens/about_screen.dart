@@ -17,7 +17,7 @@ class AboutScreen extends StatelessWidget {
       'role': 'Developer'
     },
     {
-      'name': 'Cesar Juárez Rojas',
+      'name': 'Cesar Rojas Juárez',
       'email': 'cesar.rojasj@alumno.buap.mx',
       'role': 'Designer'
     },

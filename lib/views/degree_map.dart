@@ -1751,7 +1751,7 @@ class DegreeMapView extends StatelessWidget {
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Center(
                                   child: Text(
-                                    'OPTACTIVAS 1',
+                                    'OPTATIVA 1',
                                     style: TextStyle(
                                         fontSize: 13, color: Colors.white),
                                     textAlign: TextAlign.center,
@@ -2257,7 +2257,7 @@ class DegreeMapView extends StatelessWidget {
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Center(
                                   child: Text(
-                                    'OPTACTIVAS 2',
+                                    'OPTATIVA 2',
                                     style: TextStyle(
                                         fontSize: 13, color: Colors.white),
                                     textAlign: TextAlign.center,
