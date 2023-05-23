@@ -27,7 +27,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   borderRadius: BorderRadius.circular(18),
                   borderSide: BorderSide.none),
               fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
-              // filled: true,
               prefixIcon: const Icon(Icons.email)),
         ),
         const SizedBox(height: 10),
@@ -38,8 +37,6 @@ class _LoginScreenState extends State<LoginScreen> {
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(18),
                 borderSide: BorderSide.none),
-            // fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
-            // filled: true,
             prefixIcon: const Icon(Icons.lock),
           ),
           obscureText: true,
@@ -50,7 +47,6 @@ class _LoginScreenState extends State<LoginScreen> {
             _login(context);
           },
           style: ElevatedButton.styleFrom(
-            // shape: const StadiumBorder(),
             padding: const EdgeInsets.symmetric(vertical: 16),
           ),
           child: const Text(
@@ -112,13 +108,12 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Image.asset('assets/logoBUAP.png', width: 200,),
+              Image.asset('assets/logo_login.png', width: 200,),
               _inputField(context),
               const Text(
                 "Tu conexión móvil con la universidad",
                 style: TextStyle(fontSize: 14, ),
               ),
-              // const Text("Tu conexión móvil con la universidad", ),
             ],
           ),
         ),
