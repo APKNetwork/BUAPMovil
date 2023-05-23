@@ -111,6 +111,7 @@ class KardexView extends StatelessWidget {
                               String materiaCalificacion =
                                   materiaSeleccionada['calificacion']
                                       .toString();
+                              String materiaid = materiaSeleccionada['id'];
                               //String materiaCalificacion =
                               materiaSeleccionada['calificacion'].toString();
                               return Scaffold(
@@ -149,7 +150,8 @@ class KardexView extends StatelessWidget {
                                                     Padding(
                                                       padding:
                                                           EdgeInsets.all(20),
-                                                      child: Text('ID:',
+                                                      child: Text(
+                                                          'ID: $materiaid',
                                                           style: TextStyle(
                                                               fontSize: 19)),
                                                     ),
