@@ -1,3 +1,4 @@
+import 'package:buapmovil/screens/about_screen.dart';
 import 'package:buapmovil/screens/login_screen.dart';
 import 'package:buapmovil/screens/qr_acc_screen.dart';
 import 'package:buapmovil/views/degree_map.dart';
@@ -110,6 +111,16 @@ class MyHomePageState extends State<MyHomePage> {
   void _onPopupMenuSelected(String value) {
     if (value == 'Cerrar sesión') {
       _signOut();
+    }
+    if (value == 'Acerca de') {
+      if (mounted) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => AboutScreen(),
+        ),
+      );
+    }
     }
   }
 
