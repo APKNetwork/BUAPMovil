@@ -371,7 +371,7 @@ class DegreeMapView extends StatelessWidget {
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
                         '4  1  0  6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -398,7 +398,7 @@ class DegreeMapView extends StatelessWidget {
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
                         '4  1  0  6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -425,7 +425,7 @@ class DegreeMapView extends StatelessWidget {
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
                         '4  1  0  6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -452,7 +452,7 @@ class DegreeMapView extends StatelessWidget {
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
                         '4  1  0  6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -478,8 +478,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -506,8 +506,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -533,8 +533,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 270, 0),
                       child: const Text(
-                        '4 1 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '4  1  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -564,8 +564,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '4 1 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '4  1  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -591,8 +591,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '4 1 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '4  1  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -618,8 +618,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '4 1 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '4  1  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -645,8 +645,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -672,8 +672,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -699,8 +699,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -726,8 +726,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -754,8 +754,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -781,8 +781,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 140, 0),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -813,8 +813,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '4 1 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '4  1  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -840,8 +840,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 260, 0),
                       child: const Text(
-                        '4 1 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '4  1  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -867,8 +867,8 @@ class DegreeMapView extends StatelessWidget {
                             : const Color.fromRGBO(255, 102, 102, 1),
                         margin: const EdgeInsets.only(top: 10),
                         child: const Text(
-                          '3 2 0 6',
-                          style: TextStyle(fontSize: 14.8, color: Colors.white),
+                          '3  2  0  6',
+                          style: TextStyle(fontSize: 14.7, color: Colors.white),
                           textAlign: TextAlign.center,
                         )),
                     Container(
@@ -894,8 +894,8 @@ class DegreeMapView extends StatelessWidget {
                             : const Color.fromRGBO(255, 102, 102, 1),
                         margin: const EdgeInsets.fromLTRB(0, 10, 130, 0),
                         child: const Text(
-                          '3 2 0 6',
-                          style: TextStyle(fontSize: 14.8, color: Colors.white),
+                          '3  2  0  6',
+                          style: TextStyle(fontSize: 14.7, color: Colors.white),
                           textAlign: TextAlign.center,
                         )),
                     Container(
@@ -920,8 +920,8 @@ class DegreeMapView extends StatelessWidget {
                             : const Color.fromRGBO(255, 102, 102, 1),
                         margin: const EdgeInsets.fromLTRB(0, 10, 140, 0),
                         child: const Text(
-                          '3 2 0 6',
-                          style: TextStyle(fontSize: 14.8, color: Colors.white),
+                          '3  2  0  6',
+                          style: TextStyle(fontSize: 14.7, color: Colors.white),
                           textAlign: TextAlign.center,
                         )),
                   ],
@@ -951,8 +951,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '2 2 0 4',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '2  2  0  4',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -979,8 +979,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1007,8 +1007,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1035,8 +1035,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1063,8 +1063,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1091,8 +1091,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 130, 0),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1119,8 +1119,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 130, 0),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1147,8 +1147,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 10, 0),
                       child: const Text(
-                        '3 2 0 5',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  5',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1179,8 +1179,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1206,8 +1206,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1234,8 +1234,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '4 1 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '4  1  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1262,8 +1262,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '2 2 0 5',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '2  2  0  5',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1289,8 +1289,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1316,8 +1316,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1371,7 +1371,7 @@ class DegreeMapView extends StatelessWidget {
                       margin: const EdgeInsets.fromLTRB(0, 10, 10, 0),
                       child: const Text(
                         '5',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        style: TextStyle(fontSize: 14, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1401,8 +1401,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 130, 0),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1428,8 +1428,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1455,8 +1455,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 270, 0),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1487,8 +1487,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1514,8 +1514,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '3 2 0 6',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '3  2  0  6',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1541,8 +1541,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 10, 0),
                       child: const Text(
-                        '2 2 0 5',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '2  2  0  5',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1572,8 +1572,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '2 2 0 4',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '2  2  0  4',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1599,8 +1599,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '2 2 0 4',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '2  2  0  4',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1626,8 +1626,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '2 2 0 4',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '2  2  0  4',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1653,8 +1653,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 790, 0),
                       child: const Text(
-                        '2 2 0 4',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '2  2  0  4',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1684,8 +1684,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.only(top: 10),
                       child: const Text(
-                        '2 2 0 4',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '2  2  0  4',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1711,8 +1711,8 @@ class DegreeMapView extends StatelessWidget {
                           : const Color.fromRGBO(255, 102, 102, 1),
                       margin: const EdgeInsets.fromLTRB(0, 10, 1050, 0),
                       child: const Text(
-                        '1 3 0 4',
-                        style: TextStyle(fontSize: 14.8, color: Colors.white),
+                        '1  3  0  4',
+                        style: TextStyle(fontSize: 14.7, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -1826,9 +1826,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.green,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -1870,9 +1870,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -1914,9 +1914,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.green,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '4 1 0 6',
+                                  '4  1  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -1958,9 +1958,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.blue,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2002,9 +2002,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2033,9 +2033,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2077,9 +2077,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2121,9 +2121,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2152,9 +2152,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2196,9 +2196,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2240,9 +2240,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.blue,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2334,9 +2334,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.blue,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2378,9 +2378,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.blue,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 5',
+                                  '3  2  0  5',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2422,9 +2422,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2448,9 +2448,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2492,9 +2492,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2518,9 +2518,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2562,9 +2562,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.blue,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2606,9 +2606,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.blue,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2650,9 +2650,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2694,9 +2694,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -2738,9 +2738,9 @@ class DegreeMapView extends StatelessWidget {
                                 color: Colors.purple,
                                 margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: const Text(
-                                  '3 2 0 6',
+                                  '3  2  0  6',
                                   style: TextStyle(
-                                      fontSize: 14.8, color: Colors.white),
+                                      fontSize: 14.7, color: Colors.white),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
