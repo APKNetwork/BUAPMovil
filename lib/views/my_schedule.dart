@@ -7,9 +7,9 @@ class ScheduleView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(8),
       child: Container(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(0),
         color: Theme.of(context).colorScheme.primary,
         child: ContainedTabBarView(
           tabs: const [
