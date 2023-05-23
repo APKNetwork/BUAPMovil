@@ -4,11 +4,12 @@ import 'package:buapmovil/views/degree_map.dart';
 import 'package:buapmovil/views/home.dart';
 import 'package:buapmovil/views/kardex.dart';
 import 'package:buapmovil/views/my_schedule.dart';
-import 'package:buapmovil/views/news_paper.dart';
 import 'package:buapmovil/views/wolf_guide.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,7 +33,22 @@ class MyApp extends StatelessWidget {
           ),
           textTheme: GoogleFonts.sourceSansProTextTheme(),
           visualDensity: VisualDensity.comfortable),
-      home: const LoginScreen(),
+      home: FutureBuilder<bool>(
+        future: SharedPreferences.getInstance()
+            .then((prefs) => prefs.getBool('loggedIn') ?? false),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const CircularProgressIndicator();
+          } else {
+            const CircularProgressIndicator();
+            if (snapshot.data == true) {
+              return const MyHomePage();
+            } else {
+              return const LoginScreen();
+            }
+          }
+        },
+      ),
     );
   }
 }
@@ -51,7 +67,7 @@ class MyHomePageState extends State<MyHomePage> {
   final List<Widget> _views = [
     const HomeView(),
     const DegreeMapView(),
-    const NewspaperView(),
+    // const NewspaperView(),
     const ScheduleView(),
     const WolfGuideView(),
     const KardexView(),
@@ -60,11 +76,40 @@ class MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 5), () {
+    checkUserLoggedIn();
+  }
+
+  void checkUserLoggedIn() async {
+    FirebaseAuth auth = FirebaseAuth.instance;
+    User? user = auth.currentUser;
+
+    if (user != null) {
       setState(() {
-        appBarText = 'Hola, usuario';
+        appBarText = 'Hola, ${user.email}';
       });
-    });
+    }
+  }
+
+  void _signOut() async {
+    FirebaseAuth auth = FirebaseAuth.instance;
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setBool('loggedIn', false);
+
+    await auth.signOut();
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const LoginScreen(),
+        ),
+      );
+    }
+  }
+
+  void _onPopupMenuSelected(String value) {
+    if (value == 'Cerrar sesión') {
+      _signOut();
+    }
   }
 
   void _onTabSelected(int index) {
@@ -81,18 +126,24 @@ class MyHomePageState extends State<MyHomePage> {
         titleTextStyle:
             GoogleFonts.montserrat(fontWeight: FontWeight.w900, fontSize: 24),
         actions: [
-          PopupMenuButton(itemBuilder: (context) {
-            return const [
-              PopupMenuItem(
+          PopupMenuButton<String>(
+            itemBuilder: (context) {
+              return [
+                const PopupMenuItem<String>(
+                  value: 'Acerca de',
                   child: Center(
-                      child:
-                          Text('Acerca de', style: TextStyle(fontSize: 14)))),
-              PopupMenuItem(
+                      child: Text('Acerca de', style: TextStyle(fontSize: 14))),
+                ),
+                const PopupMenuItem<String>(
+                  value: 'Cerrar sesión',
                   child: Center(
                       child: Text('Cerrar sesión',
-                          style: TextStyle(fontSize: 14))))
-            ];
-          })
+                          style: TextStyle(fontSize: 14))),
+                ),
+              ];
+            },
+            onSelected: _onPopupMenuSelected,
+          )
         ],
       ),
       body: IndexedStack(
@@ -110,10 +161,6 @@ class MyHomePageState extends State<MyHomePage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.edit),
               label: 'Mi carrera',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.newspaper),
-              label: 'Noticias',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_month),
