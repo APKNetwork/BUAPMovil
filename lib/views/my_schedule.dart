@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 
 class ScheduleView extends StatelessWidget {
   const ScheduleView({super.key});
@@ -6,20 +7,27 @@ class ScheduleView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Center(
-            child: Text(
-              'Mi horario',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ],
+      padding: const EdgeInsets.all(8),
+      child: Container(
+        padding: const EdgeInsets.all(0),
+        color: Theme.of(context).colorScheme.primary,
+        child: ContainedTabBarView(
+          tabs: const [
+            Text('Lu'),
+            Text('Mar'),
+            Text('Mie'),
+            Text('Jue'),
+            Text('Vie'),
+          ],
+          views: [
+            Container(color: Colors.white),
+            Container(color: Colors.white),
+            Container(color: Colors.white),
+            Container(color: Colors.white),
+            Container(color: Colors.white)
+          ],
+          onChange: (index) => print(index),
+        ),
       ),
     );
   }
