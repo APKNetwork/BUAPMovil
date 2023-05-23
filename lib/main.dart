@@ -82,12 +82,13 @@ class MyHomePageState extends State<MyHomePage> {
   void checkUserLoggedIn() async {
     FirebaseAuth auth = FirebaseAuth.instance;
     User? user = auth.currentUser;
-
-    if (user != null) {
-      setState(() {
-        appBarText = 'Hola, ${user.email}';
-      });
-    }
+    Future.delayed(const Duration(seconds: 5), () {
+      if (user != null) {
+        setState(() {
+          appBarText = 'Hola, ${user.email}';
+        });
+      }
+    });
   }
 
   void _signOut() async {
