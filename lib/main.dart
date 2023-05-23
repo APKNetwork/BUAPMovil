@@ -4,7 +4,6 @@ import 'package:buapmovil/views/degree_map.dart';
 import 'package:buapmovil/views/home.dart';
 import 'package:buapmovil/views/kardex.dart';
 import 'package:buapmovil/views/my_schedule.dart';
-import 'package:buapmovil/views/news_paper.dart';
 import 'package:buapmovil/views/wolf_guide.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -68,7 +67,7 @@ class MyHomePageState extends State<MyHomePage> {
   final List<Widget> _views = [
     const HomeView(),
     const DegreeMapView(),
-    const NewspaperView(),
+    // const NewspaperView(),
     const ScheduleView(),
     const WolfGuideView(),
     const KardexView(),
@@ -162,10 +161,6 @@ class MyHomePageState extends State<MyHomePage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.edit),
               label: 'Mi carrera',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.newspaper),
-              label: 'Noticias',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_month),
